@@ -1,7 +1,8 @@
 window.PorfolioConfig = {
   name: 'Mario De Clippeleir',
   jobTitle: 'Freelance software engineer',
-  jobDescription: '',
+  jobDescription: 'Experienced  Software Engineer With a strong background in both embedded systems and higher-level PC applications, I specialize in creating seamless interactions between hardware and software.',
+
   skills: [
     {
       name: 'Programming Languages',
@@ -9,20 +10,65 @@ window.PorfolioConfig = {
         'C': { percentage: '95%', description: 'Expert in C programming' },
         'C++': { percentage: '90%', description: 'Advanced knowledge of C++' },
         'Python': { percentage: '95%', description: 'Proficient in Python scripting' },
-        'Linux': { percentage: '80%', description: 'Experienced with Linux systems' }
+        '.NET / C# / C++ / CLI': { percentage: '70%', description: 'Experienced with .NET systems' },
+        'Java': { percentage: '80%', description: 'Some experience with Java systems' },
+        'Rust': { percentage: '40%', description: 'Learning the RUST language' }
       },
       description: 'Programming Languages proficiency'
     },
     {
-      name: 'C++',
-      description: 'Fugiat veniam esse consequat quis cillum elit consequat Lorem pariatur ipsum veniam irure incididunt non.'
+      name: 'Frameworks',
+      items: {
+        'ROS2': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'Nordic SDK ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'Zephyr SDK ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'FreeRTOS': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'QEMU ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'CMake ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'Make': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'Yocto ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'GoogleTest ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'NUnit / Junit ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'Unity ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'ESP32-IDF ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+
+
+      },
+      description: 'Programming Languages proficiency'
     },
     { 
-      name: 'Python',
+      name: 'Protocols',
+      items: {
+        'BLE': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'Bluetooth ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'ZigBee ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'WiFi ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'MQTT': { percentage: '90%', description: 'Advanced knowledge of C++' },
+
+        'CAN / CANOpen ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'SPI / UART / I2C': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'LoraWan ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'Matter ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'DFU / OTA ': { percentage: '90%', description: 'Device Firmware Update // over the air updates' },
+        'ProtocolBuffers / flatbuffers ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        
+      },
       description: 'Elit tempor mollit consectetur laborum nostrud qui in.'
     },
     {
-      name: 'Linux',
+      name: 'Hardware',
+      items: {
+        'ARM': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'NRF52': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'iMX9': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'STM32': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'ESP32': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'baremetal chipsets': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+      },
+      description: 'Elit tempor mollit consectetur laborum nostrud qui in.'
+    },
+    {
+      name: 'Tooling',
       description: 'Elit tempor mollit consectetur laborum nostrud qui in.'
     }
   ],
