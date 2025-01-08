@@ -19,18 +19,18 @@ window.PorfolioConfig = {
     {
       name: 'Frameworks',
       items: {
-        'ROS2': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'Nordic SDK ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'Zephyr SDK ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'FreeRTOS': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'QEMU ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'CMake ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'Make': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'Yocto ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'GoogleTest ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'NUnit / Junit ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'Unity ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'ESP32-IDF ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'ROS2': { percentage: '85%', description: '' },
+        'Nordic SDK ': { percentage: '90%', description: 'nRF SDK' },
+        'Zephyr SDK ': { percentage: '90%', description: '' },
+        'FreeRTOS': { percentage: '90%', description: '' },
+        'QEMU ': { percentage: '90%', description: '' },
+        'CMake ': { percentage: '90%', description: '' },
+        'Make': { percentage: '90%', description: '' },
+        'Yocto ': { percentage: '90%', description: '' },
+        'GoogleTest ': { percentage: '90%', description: '' },
+        'NUnit / Junit ': { percentage: '90%', description: '' },
+        'Unity ': { percentage: '90%', description: '' },
+        'ESP32-IDF ': { percentage: '90%', description: '' },
 
 
       },
@@ -39,37 +39,37 @@ window.PorfolioConfig = {
     { 
       name: 'Protocols',
       items: {
-        'BLE': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'Bluetooth ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'ZigBee ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'WiFi ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'MQTT': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'BLE': { percentage: '95%', description: '' },
+        'Bluetooth ': { percentage: '90%', description: '' },
+        'ZigBee ': { percentage: '90%', description: '' },
+        'WiFi ': { percentage: '90%', description: '' },
+        'MQTT': { percentage: '90%', description: '' },
 
-        'CAN / CANOpen ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'SPI / UART / I2C': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'LoraWan ': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'Matter ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'CAN / CANOpen ': { percentage: '90%', description: '' },
+        'SPI / UART / I2C': { percentage: '90%', description: '' },
+        'LoraWan ': { percentage: '90%', description: '' },
+        'Matter ': { percentage: '90%', description: '' },
         'DFU / OTA ': { percentage: '90%', description: 'Device Firmware Update // over the air updates' },
-        'ProtocolBuffers / flatbuffers ': { percentage: '90%', description: 'Advanced knowledge of C++' },
+        'ProtocolBuffers / flatbuffers ': { percentage: '90%', description: '' },
         
       },
-      description: 'Elit tempor mollit consectetur laborum nostrud qui in.'
+      description: ''
     },
     {
       name: 'Hardware',
       items: {
-        'ARM': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'NRF52': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'iMX9': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'STM32': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'ESP32': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
-        'baremetal chipsets': { percentage: '95%', description: 'Good knowledge in Mosquitto frameworks' },
+        'ARM': { percentage: '95%', description: '' },
+        'NRF52': { percentage: '95%', description: '' },
+        'iMX9': { percentage: '95%', description: '' },
+        'STM32': { percentage: '95%', description: '' },
+        'ESP32': { percentage: '95%', description: '' },
+        'baremetal chipsets': { percentage: '95%', description: '' },
       },
-      description: 'Elit tempor mollit consectetur laborum nostrud qui in.'
+      description: ''
     },
     {
       name: 'Tooling',
-      description: 'Elit tempor mollit consectetur laborum nostrud qui in.'
+      description: ''
     }
   ],
   works: [
@@ -91,16 +91,16 @@ window.PorfolioConfig = {
   ],
   hobbies: [
     {
-      name: 'Rock Climbing',
-      description: 'Occaecat ipsum dolor ea ad ut irure do proident excepteur consectetur duis eu culpa velit.'
+      name: 'Drums',
+      description: 'Performing as a drummer in a band, showcasing rhythm and creativity during live performances and practice sessions.'
     },
     {
-      name: 'Surfing',
-      description: 'Laboris occaecat adipisicing culpa duis aute ea excepteur quis eiusmod mollit est pariatur.'
+      name: 'Tennis',
+      description: 'Competing in tennis matches and practicing regularly to refine technique, agility, and sportsmanship.'
     },
     {
-      name: 'Rubick\'s Cube',
-      description: 'Laborum pariatur sint labore officia enim occaecat id.'
+      name: 'Running',
+      description: 'Maintaining physical and mental fitness through regular running.'
     }
   ],
   contacts: {

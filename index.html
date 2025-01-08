@@ -97,11 +97,18 @@
                   {{skill.name}}</h2>
                 <br>
                 <p>{{ skill.description }}</p>
-                <div v-for="(item, key) in skill.items" :key="key" class="mb-4">
-                  <p><strong>{{ key }}:</strong> {{ item.description }}</p>
-                  <div style="max-width: 200px;"> <!-- Limit the width here -->
-                    <v-progress-linear :value="parseInt(item.percentage)" height="10" color="primary" striped
-                      :label="item.percentage"></v-progress-linear>
+                <div class="d-flex flex-wrap">
+                  <div v-for="(item, key) in skill.items" :key="key" class="mb-4"
+                    style="flex: 1 1 calc(33.33% - 1rem); max-width: calc(33.33% - 1rem); margin: 0.5rem;">
+                    <p><strong>{{ key }}:</strong> {{ item.description }}</p>
+                    <v-progress-circular :value="parseInt(item.percentage)" rotate="0" size="60" width="10"
+                      color="primary">
+                      <template v-slot:default> {{ item.percentage }} </template>
+                    </v-progress-circular>
+                    <div style="max-width: 200px;"> <!-- Limit the width here -->
+                      <v-progress-linear :value="parseInt(item.percentage)" height="10" color="primary" striped
+                        :label="item.percentage"></v-progress-linear>
+                    </div>
                   </div>
                 </div>
               </v-card-text>
