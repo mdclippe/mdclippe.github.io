@@ -12,6 +12,7 @@ window.PorfolioConfig = {
         'Python': { percentage: '95%', description: 'Proficient in Python scripting' },
         '.NET / C# / C++ / CLI': { percentage: '70%', description: 'Experienced with .NET systems' },
         'Java': { percentage: '80%', description: 'Some experience with Java systems' },
+        'JavaScript / TypeScript': { percentage: '65%', description: '' },
         'Rust': { percentage: '40%', description: 'Learning the RUST language' }
       },
       description: 'Programming Languages proficiency'
@@ -20,30 +21,32 @@ window.PorfolioConfig = {
       name: 'Frameworks',
       items: {
         'ROS2': { percentage: '85%', description: '' },
+        'Bluez' : { percentage: '95%', description: '' },
         'Nordic SDK ': { percentage: '90%', description: 'nRF SDK' },
         'Zephyr SDK ': { percentage: '90%', description: '' },
         'FreeRTOS': { percentage: '90%', description: '' },
         'QEMU ': { percentage: '90%', description: '' },
-        'CMake ': { percentage: '90%', description: '' },
-        'Make': { percentage: '90%', description: '' },
-        'Yocto ': { percentage: '90%', description: '' },
-        'GoogleTest ': { percentage: '90%', description: '' },
-        'NUnit / Junit ': { percentage: '90%', description: '' },
+        'CMake ': { percentage: '95%', description: '' },
+        'Make': { percentage: '95%', description: '' },
+        'Yocto ': { percentage: '70%', description: '' },
+        'GoogleTest ': { percentage: '80%', description: '' },
+        'NUnit / Junit ': { percentage: '80%', description: '' },
         'Unity ': { percentage: '90%', description: '' },
         'ESP32-IDF ': { percentage: '90%', description: '' },
-
-
+        'OpenCV' : { percentage: '60%', description: 'Used quite some time ago....' },
+        'Flask / FastAPI' : { percentage: '85%', description: '' },
       },
-      description: 'Programming Languages proficiency'
+      description: 'Used frameworks and SDKs'
     },
     { 
       name: 'Protocols',
       items: {
         'BLE': { percentage: '95%', description: '' },
-        'Bluetooth ': { percentage: '90%', description: '' },
+        'Bluetooth ': { percentage: '95%', description: '' },
         'ZigBee ': { percentage: '90%', description: '' },
         'WiFi ': { percentage: '90%', description: '' },
         'MQTT': { percentage: '90%', description: '' },
+        'D-BUS': { percentage: '90%', description: '' },
 
         'CAN / CANOpen ': { percentage: '90%', description: '' },
         'SPI / UART / I2C': { percentage: '90%', description: '' },
@@ -51,9 +54,13 @@ window.PorfolioConfig = {
         'Matter ': { percentage: '90%', description: '' },
         'DFU / OTA ': { percentage: '90%', description: 'Device Firmware Update // over the air updates' },
         'ProtocolBuffers / flatbuffers ': { percentage: '90%', description: '' },
-        
+        'XML / JSON / YAML / ...  ' : { percentage: '90%', description: '' },
+        'Websockets ': { percentage: '90%', description: '' },
+
+        'OpenAPI / RESTApi' : { percentage: '90%', description: '' },
+
       },
-      description: ''
+      description: 'Used protocol / interfaces technologies'
     },
     {
       name: 'Hardware',
@@ -64,29 +71,122 @@ window.PorfolioConfig = {
         'STM32': { percentage: '95%', description: '' },
         'ESP32': { percentage: '95%', description: '' },
         'baremetal chipsets': { percentage: '95%', description: '' },
+        'RaspBerry Pi': { percentage: '95%', description: '' },
       },
       description: ''
     },
     {
       name: 'Tooling',
+      items: {
+        'Linux': { percentage: '95%', description: '' },
+        'MacOS': { percentage: '95%', description: '' },
+        'Windows': { percentage: '95%', description: '' },
+        'Git / BitBucket / Gitlab': { percentage: '95%', description: '' },
+        'Jira / Gitlab': { percentage: '95%', description: '' },
+        'GDB / OpenOCD / ': { percentage: '95%', description: '' },
+        'TeamCity / Jenkins / Gitlab pipelines / Jira pipelines': { percentage: '95%', description: '' },
+        'Confluence': { percentage: '95%', description: '' },
+        'Plantuml / Visio': { percentage: '95%', description: '' },
+        'Docker': { percentage: '95%', description: '' },
+        'Logic Analyzers / Oscilloscope / Can Sniffers/ RF Power Meter / RF Spectrum Analyser / multimeter': { percentage: '95%', description: '' },
+      },
+
       description: ''
+    }
+  ],
+  courses: [
+    {
+      name: 'Udacity : C++ (v11 - v20)',
+      link: 'http://udacity.com',
+      description: 'Course to update my knowledge to modern C++'
+    },
+    {
+      name: 'Working with Agilent Signal Analyzers',
+      link: '',
+      description: 'Course to really understand the Signal Analyzer workings'
+    },
+    {
+      name: 'Project Management',
+      link: 'https://www.cevora.be/',
+      description: ''
+    },
+    {
+      name: 'Programming ADO.Net in C#',
+      link: 'https://www.cevora.be/',
+      description: ''
+    },
+    {
+      name: 'Programming with XML in C#',
+      link: 'https://www.cevora.be/',
+      description: ''
+    },
+    {
+      name: 'Sound Engineering',
+      link: 'https://www.lgo.be/',
+      description: 'I followed this course when i worked for Solid State Logic (Audio company) and also out of personal interest'
+    },
+    {
+      name: 'Medical Devices',
+      link: '',
+      description: 'Good clinical practice.'
+    },
+    {
+      name : 'Standards',
+      link: '',
+      description : 'ISO 13485 (medical), ISO 9001 (QMS), ISO 14001 (EMS), IEC 61000 (EMC), IEC 62304, IEC 60601 '
     }
   ],
   works: [
     {
-      name: 'Vue Stripe Checkout',
-      link: 'https://jofftiquez.github.io/vue-stripe-checkout',
-      description: 'Mollit dolor tempor adipisicing non pariatur in tempor cillum do. In officia ullamco laborum ullamco voluptate. Laboris sunt quis enim Lorem laboris aliquip duis non magna excepteur voluptate. Pariatur velit aliquip officia nulla anim reprehenderit deserunt. Sint nostrud ipsum do aliquip.'
+      name: 'Atlas Copco : Airtech division',
+      link: 'https://atlascopco.com',
+      description: 'Work on next generation platform for compressors'
     },
     {
-      name: 'ToDo App',
-      link: 'https://theuselessweb.com/',
-      description: 'Esse magna anim incididunt enim sint aute consectetur ipsum id nostrud eu do. Pariatur et anim enim aliquip anim. Laboris labore incididunt labore enim nisi elit excepteur deserunt irure exercitation exercitation. Lorem sit ad laborum sit velit veniam sit nisi nostrud occaecat duis nulla duis.'
+      name: 'PSA HNN (previously Cosmos NV)',
+      link: 'https://www.psa-antwerp.be/nl',
+      description: 'Ports Container yard planning software'
     },
     {
-      name: 'A Mobile Game',
-      link: 'https://theuselessweb.com/',
-      description: 'Incididunt non cupidatat deserunt ut commodo qui non do Lorem. Qui aute minim enim sit magna est consectetur incididunt. Ex est cupidatat tempor pariatur deserunt labore tempor minim laboris magna ipsum minim ea ea. Consectetur do anim laboris nulla nisi veniam sint qui.'
+      name: 'Duratech',
+      link: 'https://www.duratech.be/',
+      description: 'Next-gen smart swimming pool systems'
+    },
+    {
+      name: 'eNovates',
+      link: 'https://www.enovates.com/',
+      description: 'Development of charging systems and connectivity'
+    },
+    {
+      name: 'Indigo Diabetes',
+      link: 'https://indigomed.com/',
+      description: 'Implantable medical device for continuous gluces measurement'
+    },
+    
+    {
+      name: 'Octiva',
+      link: 'https://octiva.tech/',
+      description: 'Agricultural robot development'
+    },
+    {
+      name: 'Solid State Logic (previously Sydec Audio Engineering)',
+      link: 'https://solidstatelogic.com/',
+      description: 'Software to route different MADI signals. DAW project conversion application. '
+    },
+    {
+      name: 'Verhaert',
+      link: 'https://verhaert.com/',
+      description: 'Several projects : Software of different parts of a stationary indoor tilt bike, stair lift that is connected to the cloud, coffee recipe maker machine'
+    },
+    {
+      name: 'Viloc',
+      link: 'https://www.hwgvolgsystemen.nl/viloc-tag',
+      description: 'Tamper-proof tracker'
+    },
+    {
+      name: 'Qorvo (previously Greenpeak Technologies)',
+      link: 'https;//www.qorvo.com',
+      description: 'Low Power Energy devices / Internet of Things'
     }
   ],
   hobbies: [

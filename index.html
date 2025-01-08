@@ -78,7 +78,8 @@
             <p>{{jobDescription}}</p>
             <nav>
               <v-btn href="#skills" text="text" class="primary--text">/Skills</v-btn href="skills">
-              <v-btn href="#works" text="text" class="primary--text">/Recent Works</v-btn>
+              <v-btn href="#courses" text="text" class="primary--text">/Courses</v-btn>
+              <v-btn href="#works" text="text" class="primary--text">/Works</v-btn>
               <v-btn href="#hobbies" text="text" class="primary--text">/Hobbies</v-btn>
               <v-btn href="#contact" text="text" class="primary--text" outlined="outlined">/Contacts</v-btn>
             </nav>
@@ -101,20 +102,39 @@
                   <div v-for="(item, key) in skill.items" :key="key" class="mb-4"
                     style="flex: 1 1 calc(33.33% - 1rem); max-width: calc(33.33% - 1rem); margin: 0.5rem;">
                     <p><strong>{{ key }}:</strong> {{ item.description }}</p>
-                    <v-progress-circular :value="parseInt(item.percentage)" rotate="0" size="60" width="10"
+                    <v-progress-circular :value="parseInt(item.percentage)" rotate="0" size="60" width="7"
                       color="primary">
                       <template v-slot:default> {{ item.percentage }} </template>
                     </v-progress-circular>
-                    <div style="max-width: 200px;"> <!-- Limit the width here -->
+                    <!--div style="max-width: 200px;"> 
                       <v-progress-linear :value="parseInt(item.percentage)" height="10" color="primary" striped
                         :label="item.percentage"></v-progress-linear>
-                    </div>
+                    </div -->
                   </div>
                 </div>
               </v-card-text>
               <v-footer>
                 <v-spacer></v-spacer>
                 <small class="primary--text">~/.skills</small>
+              </v-footer>
+            </v-card>
+          </v-col>
+        </section>
+        <section class="row mb-5" id="courses">
+          <v-col cols="12" md="6">
+            <h1 class="primary--text" data-aos="fade-up">/Courses</h1>
+          </v-col>
+          <v-col v-for="(course, index) in courses" cols="12" :key="index">
+            <v-card hover="hover" height="100%" data-aos="fade-up" rel="noreferrer" :href="course.link">
+              <v-card-text>
+                <h2 class="primary--text">>
+                  {{course.name}}</h2>
+                <br>
+                <p>{{course.description}}</p>
+              </v-card-text>
+              <v-footer>
+                <v-spacer></v-spacer>
+                <small class="primary--text">~/.courses</small>
               </v-footer>
             </v-card>
           </v-col>
@@ -167,6 +187,7 @@
                 <h3 v-if="contacts && contacts.email">{{contacts.email}}</h3>
                 <h3 v-if="contacts && contacts.mobileNo">{{contacts.mobileNo}}</h3>
                 <h3 v-if="contacts && contacts.location">{{contacts.location}}</h3>
+
               </v-col>
               <v-col class="text-center" cols="12" data-aos="fade-up">
                 <v-btn class="ma-1" v-for="(link, index) in contactLinks" outlined="outlined" rounded="rounded"
@@ -178,13 +199,95 @@
           </v-col>
         </section>
       </main>
-      <!--footer class="v-footer v-sheet theme--dark" data-booted="true">
+      <footer class="v-footer v-sheet theme--dark" data-booted="true">
         <v-spacer></v-spacer>
-        <small>Template made with
-          <v-icon class="red--text">mdi-heart</v-icon>
-          by
+        <small>  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+          <script>
+            window.formbutton =
+              window.formbutton ||
+              function() {
+                (formbutton.q = formbutton.q || []).push(arguments);
+              };
+            formbutton("create", {
+              action: "https://formspree.io/f/xbllpnza",
+              title: "Contact Me",
+              fields: [
+                {
+                  type: "text",
+                  label: "Name:",
+                  name: "name",
+                },
+                {
+                  type: "email",
+                  label: "Email:",
+                  name: "email",
+                },
+                {
+                  type: "text",
+                  label: "Phone:",
+                  name: "phone",
+                },
+                {
+                  type: "textarea",
+                  label: "Message:",
+                  name: "message",
+                },
+                {
+                  type: "checkbox",
+                  label: "Please send me your latest CV",
+                  name: "_sendCV",
+                },
+                { type: "submit", value: "Send" }
+              ],
+              styles: {
+                fontFamily: "Montserrat",
+                modal: {
+                  border: "1px solid #6D6875",
+                  boxShadow: "6px 6px 0 #6D6875",
+                  borderRadius: "0",
+                },
+                title: {
+                  padding: "24px 24px 0px 24px",
+                  background: "rgba(0,0,0,0)",
+                  color: "#2e2a37",
+                  fontFamily: "Marcellus SC",
+                  fontSize: "2em",
+                },
+                body: {
+                    padding: "16px 24px 24px",
+                },
+                field: {
+                  display: "flex",
+                },
+                submitField: {
+                  justifyContent: "flex-end",            
+                },
+                label: {
+                  width: "40%",
+                },
+                checkboxLabel: {
+                  width: "auto",
+                },
+                input: {
+                  borderRight: "1px solid rgba(0,0,0,0.1)",
+                  borderBottom: "1px solid rgba(0,0,0,0.1)",
+                  borderRadius: "0px"
+                },
+                button: {
+                  background: "white",
+                  fill: "#6D6875",
+                  border: "1px solid #6D6875",
+                  boxShadow: "3px 3px 0px #6D6875"
+                },
+                closeButton: {
+                  textShadow: "0 0 0 #2e2a37",
+                }
+              },
+              initiallyVisible: true
+            });
+          </script>
         </small>
-      </footer-->
+      </footer>
     </v-app>
   </div>
 
