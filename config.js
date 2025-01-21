@@ -1,19 +1,24 @@
 window.PorfolioConfig = {
   name: 'Mario De Clippeleir',
-  jobTitle: 'Freelance software engineer',
-  jobDescription: 'Experienced  Software Engineer With a strong background in both embedded systems and higher-level PC applications, I specialize in creating seamless interactions between hardware and software.',
+  jobTitle: 'Freelance software engineer passionate about hardware',
+  jobDescription: 'I am a seasoned freelance software engineer with a strong background in both embedded systems and higher-level PC applications. My expertise lies in bridging the gap between hardware and software, crafting seamless interactions that bring innovative solutions to life. \n \
+With years of experience in developing robust embedded systems, I have a deep understanding of low-level programming, microcontroller architecture, and real-time constraints. I’ve worked with various hardware platforms, creating firmware that is efficient, reliable, and tailored to meet specific needs.\n \
+On the other side of the spectrum, my proficiency in higher-level application development allows me to design intuitive and user-friendly interfaces, powerful tools, and backend systems. This dual expertise enables me to tackle complex, multidisciplinary projects with confidence and deliver end-to-end solutions that function flawlessly. \n\n  \
+I am quality-focused and eager to learn new things, constantly striving to refine my skills and stay updated with the latest industry trends. \
+From crafting firmware for IoT devices to developing desktop applications that manage hardware configurations, I am passionate about solving technical challenges and pushing the boundaries of what’s possible. I thrive in environments where creativity, innovation, and precision are key to success. \n \n \
+Let’s work together to turn your ideas into reality. Whether you need embedded software, a PC application, or both, I’m here to help you build solutions that work seamlessly.', 
 
   skills: [
     {
       name: 'Programming Languages',
       items: {
-        'C': { percentage: '95%', description: 'Expert in C programming' },
-        'C++': { percentage: '90%', description: 'Advanced knowledge of C++' },
-        'Python': { percentage: '95%', description: 'Proficient in Python scripting' },
-        '.NET / C# / C++ / CLI': { percentage: '70%', description: 'Experienced with .NET systems' },
-        'Java': { percentage: '80%', description: 'Some experience with Java systems' },
+        'C': { percentage: '95%', description: '' },
+        'C++': { percentage: '90%', description: '11-20' },
+        'Python': { percentage: '95%', description: '' },
+        '.NET / C# / C++ / CLI': { percentage: '70%', description: '' },
+        'Java': { percentage: '80%', description: '' },
         'JavaScript / TypeScript': { percentage: '65%', description: '' },
-        'Rust': { percentage: '40%', description: 'Learning the RUST language' }
+        'Rust': { percentage: '40%', description: 'Still learning' }
       },
       description: 'Programming Languages proficiency'
     },
@@ -138,56 +143,62 @@ window.PorfolioConfig = {
   ],
   works: [
     {
-      name: 'Atlas Copco : Airtech division',
-      link: 'https://atlascopco.com',
-      description: 'Work on next generation platform for compressors'
+      name: 'Next generation platform architecture for Industrial air',
+      techstack: 'Linux (Yocto build), C/C++, Python, Bluez BLE, Wifi, MQTT, DBUS, USB, Serial',
+      description: 'Poc wireless BLE/WIFI modules integration, USB communication, test framework '
     },
     {
-      name: 'PSA HNN (previously Cosmos NV)',
-      link: 'https://www.psa-antwerp.be/nl',
-      description: 'Ports Container yard planning software'
+      name: 'Agricultural Robot development',
+      techstack: 'ROS2, Python (Flask/FastApi), Websockets, CAN, Javascript,HTML, REST API, Linux, Raspberry Pi, docker',
+      description: 'Modular robot development using ROS2 (C++) and python, CAN driver implementation, webui for testing'
     },
     {
-      name: 'Duratech',
-      link: 'https://www.duratech.be/',
-      description: 'Next-gen smart swimming pool systems'
+      name: 'Next-gen smart swimming pool systems',
+      techstack: 'C/C++, embedded Linux, Python, Cloud, Mender, OrangePi, MQTT, RestAPI',
+      description: 'Define new architecture for future proofing / Tech lead'
     },
     {
-      name: 'eNovates',
-      link: 'https://www.enovates.com/',
-      description: 'Development of charging systems and connectivity'
+      name: 'Indoor stationary Tilt Bike',
+      techstack: 'STM32 (ARM cortex), nRF52, BLE, C, C++, CANOpen',
+      description: 'Development of the tilt bike from scratch, software implementation on developped hardware, used CAN communication between components and BLE to the outside world'
     },
     {
-      name: 'Indigo Diabetes',
-      link: 'https://indigomed.com/',
+      name: 'Coffee designer maker machine',
+      techstack: 'C, C++, FreeRTOS, Python',
+      description: 'Machine that allows for coffee makers to test out different ingredient settings/combinations'
+    },
+    {
+      name: 'Connected Stair Lift',
+      techstack: 'Zephyr, MQTT, CAN, UART, SPI, C',
+      description: 'proof of concept and initial framework setup to convince client of the solution. Handling of the CAN data and pushing it over MQTT'
+    },
+
+    {
+      name: 'EV Charging Systems',
+      techstack: 'Java, C++, Python, BLE, STM32 (ARMcortex), embedded Linux, Raspberry Pi',
+      description: 'Development of charging systems and connectivity, BLE communication, API development'
+    },
+    {
+      name: 'Medical implantable device (CGMS)',
+      techstack: 'nrf52, stm32, C, BLE, UART, SPI, FPGA',
       description: 'Implantable medical device for continuous gluces measurement'
     },
-    
     {
-      name: 'Octiva',
-      link: 'https://octiva.tech/',
-      description: 'Agricultural robot development'
+      name: 'Low energy wireless chips (IoT)',
+      techstack: ' ARM, Rpi, Python, C, BLE, UART, SPI, FPGA',
+      description: 'Application software to test and program the chips. SDK development for 3rd parties'
     },
     {
-      name: 'Solid State Logic (previously Sydec Audio Engineering)',
-      link: 'https://solidstatelogic.com/',
-      description: 'Software to route different MADI signals. DAW project conversion application. '
+      name: 'Sound Engineering Tools',
+      techstack: 'Java, C/C++, Linux, .NET (C#), Mono, TCP/IP, DSP',
+      description: 'Software to route different MADI signals (combination PC/MAC + embedded Linux). DAW project conversion application. Plugins for existing DAW'
     },
+ 
     {
-      name: 'Verhaert',
-      link: 'https://verhaert.com/',
-      description: 'Several projects : Software of different parts of a stationary indoor tilt bike, stair lift that is connected to the cloud, coffee recipe maker machine'
+      name: 'Container terminal Yard planning software',
+      techstack: 'Java, C++, C# (.NET), XML, ADO',
+      description: 'Development of software to optimise the placing of the containers on a yard terminal. Communication protocol between ship and hardbour. Optimisation algorithms.'
     },
-    {
-      name: 'Viloc',
-      link: 'https://www.hwgvolgsystemen.nl/viloc-tag',
-      description: 'Tamper-proof tracker'
-    },
-    {
-      name: 'Qorvo (previously Greenpeak Technologies)',
-      link: 'https;//www.qorvo.com',
-      description: 'Low Power Energy devices / Internet of Things'
-    }
   ],
   hobbies: [
     {
