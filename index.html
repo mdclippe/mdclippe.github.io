@@ -78,9 +78,20 @@
       <header class="container" v-bind="sectionHeight">
         <v-row align="center">
           <v-col cols="12" md="6" data-aos="fade-up">
-            <h1 class="display-4 primary--text">{{name}}</h1>
-            <h2 class="primary--text">{{jobTitle}}</h2>
-            <p id="output">{{jobDescription}}</p>
+                   <!-- Name and Image in a Horizontal Row -->
+      <div class="d-flex align-center">
+        <h1 class="display-4 primary--text d-inline-block mr-3">{{ name }}</h1>
+        <v-img 
+          src="mario_profile_view.jpg" 
+          alt="Profile Picture" 
+          contain 
+          height="150" 
+          width="150" 
+          rounded
+        ></v-img>
+      </div>    
+          <h2 class="primary--text">{{jobTitle}}</h2>
+            <p id="output">{{jobDescription}}</p> 
             <nav>
               <v-btn href="#skills" text="text" class="primary--text">/Skills</v-btn href="skills">
               <v-btn href="#courses" text="text" class="primary--text">/Courses</v-btn>

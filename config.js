@@ -15,7 +15,7 @@ Let’s work together to turn your ideas into reality. Whether you need embedded
         'C': { percentage: '95%', description: '' },
         'C++': { percentage: '90%', description: '11-20' },
         'Python': { percentage: '95%', description: '' },
-        '.NET / C# / C++ / CLI': { percentage: '70%', description: '' },
+        '.NET / C# / C++ - CLI': { percentage: '80%', description: '' },
         'Java': { percentage: '80%', description: '' },
         'JavaScript / TypeScript': { percentage: '65%', description: '' },
         'Rust': { percentage: '40%', description: 'Still learning' }
